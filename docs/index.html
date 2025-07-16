@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CAMARA API viewer</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 0.5em;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
+    }
+  </style>
+  
+</head>
+<h1>CAMARA API Viewer</h1>
+<h2>VerifiedCaller - stroncoso-quobis fork</h2>
+<body>
+  <h3>Branch selector</h3>
+  <select id="branch-select">
+    <option value="">Cargando ramas...</option>
+  </select>
+  <h3>Markdown renders (main only)</h3>
+  <ul>
+    <li>
+      <a class="link-markdown" href="markdown-viewer.html?src=https://raw.githubusercontent.com/stroncoso-quobis/VerifiedCaller/refs/heads/main/README.md">README</a>
+    </li>
+    <li>
+      <a class="link-markdown" href="markdown-viewer.html?src=https://raw.githubusercontent.com/stroncoso-quobis/VerifiedCaller/refs/heads/main/CHANGELOG.md">CHANGELOG</a>
+    </li>
+  </ul>
+  <h3>API renders</h3>
+  <ul>
+    <li><a class="link-api" href="api-render.html?apiFile=brand-registration.yaml">brand-registration</a></li>
+    <li><a class="link-api" href="api-render.html?apiFile=verifiedcaller-preannounce.yaml">verifiedcaller-preannounce</a></li>
+  </ul>
+  <h3>UML renders (main only)</h3>
+  <ul>
+    <li><a class="link-uml" href="uml-viewer.html?src=https://github.com/stroncoso-quobis/VerifiedCaller/raw/refs/heads/main/documentation/SupportingDocuments/brand-registration.uml">brand-registration</a></li>
+    <li><a class="link-uml" href="uml-viewer.html?src=https://github.com/stroncoso-quobis/VerifiedCaller/raw/refs/heads/main/documentation/SupportingDocuments/verifiedcaller-preannounce.uml">verifiedcaller-preannounce</a></li>
+  </ul>
+</body>
+
+<!-- Cargamos nuestro script de branches -->
+<script src="js/branches.js"></script>
+<script src="js/linkUpdater.js"></script>
+</html>
